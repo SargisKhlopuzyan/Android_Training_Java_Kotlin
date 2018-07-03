@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sargiskh.android_training_java_kotlin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ok_http.kotlin.MainActivity_Kotlin_Synchronous_Calls_OkHttp_GET" />
+        <activity android:name=".ok_http.java.MainActivity_Java_Synchronous_Calls_OkHttp_GET" />
+        <activity android:name=".ok_http.java.MainActivity_Java_Asynchronous_Calls_OkHttp_GET" />
+        <activity android:name=".ok_http.java.MainActivity_Java_Synchronous_Calls_OkHttp_Query_Parameters_And_Headers_GET" />
+        <activity android:name=".ok_http.java.MainActivity_Java_Asynchronous_Calls_OkHttp_POST" />
+        <activity android:name=".retrofit.java.RetrofitActivity_Java"/>
+        <activity android:name=".retrofit.kotlin.RetrofitActivity_Kotlin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
