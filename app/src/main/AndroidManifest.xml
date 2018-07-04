@@ -16,8 +16,11 @@
         <activity android:name=".ok_http.java.MainActivity_Java_Asynchronous_Calls_OkHttp_GET" />
         <activity android:name=".ok_http.java.MainActivity_Java_Synchronous_Calls_OkHttp_Query_Parameters_And_Headers_GET" />
         <activity android:name=".ok_http.java.MainActivity_Java_Asynchronous_Calls_OkHttp_POST" />
-        <activity android:name=".retrofit.java.RetrofitActivity_Java"/>
-        <activity android:name=".retrofit.kotlin.RetrofitActivity_Kotlin">
+        <activity android:name=".retrofit.java.RetrofitActivity_Java" />
+        <activity android:name=".retrofit.kotlin.RetrofitActivity_Kotlin" />
+        <activity android:name=".async_task_loader.java.version_1.MainActivity_Async_Task_Loader_Version_1">
+        </activity>
+        <activity android:name=".async_task_loader.java.version_2.MainActivity_Async_Task_Loader_Version_2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
