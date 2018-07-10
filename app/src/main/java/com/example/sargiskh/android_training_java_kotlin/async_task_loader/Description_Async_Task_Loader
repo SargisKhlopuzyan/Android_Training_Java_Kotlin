@@ -1,0 +1,13 @@
+https://edgedevstudio.com/background-processing-android-async-task-loader/
+
+AsyncTaskLoader is a subclass of Loader, unlike AsyncTask’s,
+AsyncTaskLoader prevent duplication of background threads and eliminate duplication of zombie (dead or destroyed) activities.
+
+There are mainly two types of loaders: AsyncTaskLoader and CursorLoader.
+
+Why Use Loaders?
+* Loaders run on separate threads to prevent unresponsive UI.
+* Loaders simplify thread management by providing callback methods when events occur.
+* Loaders persist and cache results across configuration changes to prevent duplicate queries.
+* Loaders can implement an observer to monitor for changes in the underlying data source.
+  For example, CursorLoader automatically registers a ContentObserver to trigger a reload when data changes.

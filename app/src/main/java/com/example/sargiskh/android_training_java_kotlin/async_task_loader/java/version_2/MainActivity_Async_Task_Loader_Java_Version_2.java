@@ -4,7 +4,6 @@ import android.content.AsyncTaskLoader;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,17 +13,10 @@ import com.example.sargiskh.android_training_java_kotlin.R;
 import com.example.sargiskh.android_training_java_kotlin.async_task_loader.java.Employee;
 import com.example.sargiskh.android_training_java_kotlin.async_task_loader.java.EmployeeAdapter;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity_Async_Task_Loader_Version_2 extends AppCompatActivity {
+public class MainActivity_Async_Task_Loader_Java_Version_2 extends AppCompatActivity {
 
     private EmployeeAdapter employeeAdapter;
 
@@ -33,7 +25,7 @@ public class MainActivity_Async_Task_Loader_Version_2 extends AppCompatActivity 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_async_task_loader);
+        setContentView(R.layout.activity_main_async_task_loader_java);
 
         employeeAdapter = new EmployeeAdapter(this, new ArrayList<Employee>());
 
@@ -48,7 +40,6 @@ public class MainActivity_Async_Task_Loader_Version_2 extends AppCompatActivity 
                 employeeAdapter.setEmployees(data);
             }
         };
-
 
         EmployeeLoader_version2 employeeLoader_version2 = new EmployeeLoader_version2(this);
         employeeLoader_version2.forceLoad();

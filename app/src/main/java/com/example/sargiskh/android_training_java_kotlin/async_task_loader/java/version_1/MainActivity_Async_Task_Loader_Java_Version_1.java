@@ -15,14 +15,14 @@ import com.example.sargiskh.android_training_java_kotlin.async_task_loader.java.
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity_Async_Task_Loader_Version_1 extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<Employee>> {
+public class MainActivity_Async_Task_Loader_Java_Version_1 extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<Employee>> {
 
     private EmployeeAdapter employeeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_async_task_loader);
+        setContentView(R.layout.activity_main_async_task_loader_java);
 
         employeeAdapter = new EmployeeAdapter(this, new ArrayList<Employee>());
 
@@ -35,7 +35,7 @@ public class MainActivity_Async_Task_Loader_Version_1 extends AppCompatActivity 
     @NonNull
     @Override
     public Loader<List<Employee>> onCreateLoader(int id, @Nullable Bundle args) {
-        return new EmployeeLoader(MainActivity_Async_Task_Loader_Version_1.this);
+        return new EmployeeLoader(MainActivity_Async_Task_Loader_Java_Version_1.this);
     }
 
     @Override
