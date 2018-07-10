@@ -20,12 +20,13 @@
         <activity android:name=".retrofit.kotlin.RetrofitActivity_Kotlin" />
         <activity android:name=".async_task_loader.java.version_1.MainActivity_Async_Task_Loader_Java_Version_1"></activity>
         <activity android:name=".async_task_loader.java.version_2.MainActivity_Async_Task_Loader_Java_Version_2"></activity>
-        <activity android:name=".async_task_loader.kotlin.MainActivity_Async_Task_Loader_Kotlin">
+        <activity android:name=".async_task_loader.java.version_3.MainActivity_Async_Task_Loader_Java_Version_3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".async_task_loader.kotlin.MainActivity_Async_Task_Loader_Kotlin"></activity>
     </application>
 
 </manifest>
