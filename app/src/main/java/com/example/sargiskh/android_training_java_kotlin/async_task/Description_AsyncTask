@@ -1,0 +1,5 @@
+https://edgedevstudio.com/background-processing-android-async-task/
+
+* Android AsyncTask is a generic and an abstract class that encloses the functionality of Thread and Handler class provided by Android which
+  allow us to run a task in the background thread while publishing results to the UI thread, thus making the application more responsive (yay!).
+  It basically combines the functionality of both the classes that is apt for the context of android
