@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".ok_http.kotlin.MainActivity_Kotlin_Synchronous_Calls_OkHttp_GET" />
         <activity android:name=".ok_http.java.MainActivity_Java_Synchronous_Calls_OkHttp_GET" />
         <activity android:name=".ok_http.java.MainActivity_Java_Asynchronous_Calls_OkHttp_GET" />
@@ -22,12 +23,20 @@
         <activity android:name=".async_task_loader.java.version_2.MainActivity_Async_Task_Loader_Java_Version_2" />
         <activity android:name=".async_task_loader.java.version_3.MainActivity_Async_Task_Loader_Java_Version_3" />
         <activity android:name=".async_task_loader.kotlin.MainActivity_Async_Task_Loader_Kotlin" />
-        <activity android:name=".async_task.MainActivity_Async_Task">
+        <activity android:name=".async_task.MainActivity_Async_Task" />
+
+        <activity android:name=".intent_service.MainActivity_IntentService" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".intent_service.MyIntentService"
+            android:exported="false">
+        </service>
+
     </application>
 
 </manifest>
