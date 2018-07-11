@@ -1,4 +1,4 @@
-package com.example.sargiskh.android_training_java_kotlin.intent_service;
+package com.example.sargiskh.android_training_java_kotlin.services.intent_service_with_result_receiver;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

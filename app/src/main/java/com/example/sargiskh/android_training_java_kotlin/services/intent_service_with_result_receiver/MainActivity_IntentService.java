@@ -1,4 +1,4 @@
-package com.example.sargiskh.android_training_java_kotlin.intent_service;
+package com.example.sargiskh.android_training_java_kotlin.services.intent_service_with_result_receiver;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -49,9 +49,10 @@ public class MainActivity_IntentService extends AppCompatActivity {
 
     private void onStartService() {
         Log.e("LOG_TAG", "onStartService");
-        Intent intent = new Intent(this, MyIntentService.class);
+        Intent intent = new Intent(this, IntentService_With_ResultReceiver.class);
         intent.putExtra("key", "value");
         intent.putExtra("receiver", resultReceiver);
         startService(intent);
     }
+
 }
