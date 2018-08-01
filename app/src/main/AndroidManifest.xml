@@ -11,6 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <service
+            android:name=".services.intent_service_with_result_receiver.IntentService_With_ResultReceiver"
+            android:exported="false" />
+        <service
+            android:name=".services.intent_service_with_broadcast_receiver.IntentService_With_BroadcastReceiver"
+            android:exported="false" />
+
         <activity android:name=".ok_http.kotlin.MainActivity_Kotlin_Synchronous_Calls_OkHttp_GET" />
         <activity android:name=".ok_http.java.MainActivity_Java_Synchronous_Calls_OkHttp_GET" />
         <activity android:name=".ok_http.java.MainActivity_Java_Asynchronous_Calls_OkHttp_GET" />
@@ -24,20 +32,18 @@
         <activity android:name=".async_task_loader.kotlin.MainActivity_Async_Task_Loader_Kotlin" />
         <activity android:name=".async_task.MainActivity_Async_Task" />
         <activity android:name=".services.intent_service_with_result_receiver.MainActivity_IntentService" />
-        <activity android:name=".services.intent_service_with_broadcast_receiver.MainActivity_IntentService">
+        <activity android:name=".services.intent_service_with_broadcast_receiver.MainActivity_IntentService" />
+        <activity android:name=".rx.java.grokking_rxjava.part_1.MainActivity_Rx_Part_1" />
+        <activity android:name=".rx.java.grokking_rxjava.part_2.MainActivity_Rx_Part_2" />
+        <activity android:name=".rx.java.grokking_rxjava.part_3.MainActivity_Rx_Part_3" />
+        <activity android:name=".rx.java.grokking_rxjava.part_4.MainActivity_Rx_Part_4" />
+
+        <activity android:name=".android_app_with_mvp_rxJava2_and_retrofit.ui.MainActivity_Movify" android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name=".services.intent_service_with_result_receiver.IntentService_With_ResultReceiver"
-            android:exported="false"></service>
-        <service
-            android:name=".services.intent_service_with_broadcast_receiver.IntentService_With_BroadcastReceiver"
-            android:exported="false"></service>
 
     </application>
 
