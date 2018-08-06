@@ -37,11 +37,10 @@
         <activity android:name=".rx.java.grokking_rxjava.part_2.MainActivity_Rx_Part_2" />
         <activity android:name=".rx.java.grokking_rxjava.part_3.MainActivity_Rx_Part_3" />
         <activity android:name=".rx.java.grokking_rxjava.part_4.MainActivity_Rx_Part_4" />
-
         <activity android:name=".android_app_with_mvp_rxJava2_and_retrofit.ui.MainActivity_Movify" android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
