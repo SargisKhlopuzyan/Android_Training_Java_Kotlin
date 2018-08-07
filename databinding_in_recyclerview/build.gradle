@@ -9,7 +9,7 @@ android {
     compileSdkVersion 27
 
     defaultConfig {
-        applicationId "com.example.databinding"
+        applicationId "com.example.databinding_in_recyclerview"
         minSdkVersion 23
         targetSdkVersion 27
         versionCode 1
@@ -28,10 +28,11 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
 
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     implementation 'com.squareup.picasso:picasso:2.71828'

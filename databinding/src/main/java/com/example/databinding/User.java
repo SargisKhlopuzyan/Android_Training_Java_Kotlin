@@ -4,8 +4,10 @@ import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 import android.databinding.BindingAdapter;
 import android.databinding.ObservableField;
+import com.example.databinding.BR;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 public class User extends BaseObservable {
@@ -45,10 +47,10 @@ public class User extends BaseObservable {
 
     @BindingAdapter("android:profileImage")
     public static void loadImage(ImageView view, String imageUrl) {
-//        Glide.with(view.getContext()).load(imageUrl).into(view);
+        Glide.with(view.getContext()).load(imageUrl).into(view);
 
         // If you consider Picasso, follow the below
-         Picasso.get().load(imageUrl).placeholder(R.drawable.placeholder).into(view);
+//         Picasso.get().load(imageUrl).placeholder(R.drawable.placeholder).into(view);
     }
 
 

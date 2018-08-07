@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/databinding" />
+            <option value="$PROJECT_DIR$/databinding_in_recyclerview" />
             <option value="$PROJECT_DIR$/mvvm_people" />
           </set>
         </option>
