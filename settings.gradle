@@ -1,1 +1,1 @@
-include ':app', ':databinding', ':mvvm_people', ':databinding_in_recyclerview'
+include ':app', ':databinding', ':mvvm_people', ':databinding_in_recyclerview', ':mvp_model_view_presenter', ':dagger_2'
