@@ -12,7 +12,7 @@
             <option value="$PROJECT_DIR$/dagger_2" />
             <option value="$PROJECT_DIR$/databinding" />
             <option value="$PROJECT_DIR$/databinding_in_recyclerview" />
-            <option value="$PROJECT_DIR$/mvp_model_view_presenter" />
+            <option value="$PROJECT_DIR$/mvp_with_dagger" />
             <option value="$PROJECT_DIR$/mvvm_people" />
           </set>
         </option>
