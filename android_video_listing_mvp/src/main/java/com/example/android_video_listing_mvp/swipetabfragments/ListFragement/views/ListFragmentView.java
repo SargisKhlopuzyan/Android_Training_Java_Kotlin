@@ -9,9 +9,7 @@ import java.util.List;
 /**
  * Created by nitinagarwal on 3/12/17.
  */
-
 public interface ListFragmentView extends ViewMvp {
-
     void bindVideoList(List<String> videoList, VideoListInfo videoListInfo);
     ObservableListView getListView();
 }

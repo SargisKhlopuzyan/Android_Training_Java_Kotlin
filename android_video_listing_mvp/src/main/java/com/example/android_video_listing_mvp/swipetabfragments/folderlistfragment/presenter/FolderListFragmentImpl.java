@@ -116,6 +116,7 @@ public class FolderListFragmentImpl extends Fragment implements VideoListFragmen
         }
         return false;
     }
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
@@ -164,4 +165,5 @@ public class FolderListFragmentImpl extends Fragment implements VideoListFragmen
 
         mFolderListFragmentView.bindVideoList(videoListInfo.getFolderListHashMap(), mFolderNames, videoListInfo);
     }
+
 }

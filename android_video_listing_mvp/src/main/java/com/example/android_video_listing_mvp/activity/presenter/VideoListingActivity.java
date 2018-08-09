@@ -80,6 +80,7 @@ public class VideoListingActivity extends AppCompatActivity implements VideoList
     }
 
     private void initDatAfterRequestGranted() {
+
         mVideoListingViewImpl = new VideoListingViewImpl(this, null);
 
         setContentView(mVideoListingViewImpl.getRootView());

@@ -19,6 +19,7 @@ import com.github.ksoichiro.android.observablescrollview.Scrollable;
  * Created by nitinagarwal on 11/1/15.
  */
 public class ObservableExpandableListView extends ExpandableListView implements Scrollable {
+
     public ObservableExpandableListView(Context context) {
         super(context);
         init();
@@ -58,6 +59,7 @@ public class ObservableExpandableListView extends ExpandableListView implements 
 
     private OnScrollListener mOriginalScrollListener;
     private OnScrollListener mScrollListener = new OnScrollListener() {
+
         @Override
         public void onScrollStateChanged(AbsListView view, int scrollState) {
             if (mOriginalScrollListener != null) {
@@ -375,7 +377,5 @@ public class ObservableExpandableListView extends ExpandableListView implements 
             }
         };
     }
-
-
 
 }

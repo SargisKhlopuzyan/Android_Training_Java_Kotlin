@@ -12,7 +12,7 @@ import com.example.android_video_listing_mvp.R;
 import com.example.android_video_listing_mvp.utils.Converters;
 import com.example.android_video_listing_mvp.activity.presenter.manager.pojo.VideoListInfo;
 import com.example.android_video_listing_mvp.utils.thumbnailutils.CustomImageView;
-import com.example.android_video_listing_mvp.utils.thumbnailutils.ThumbnailCreateor;
+import com.example.android_video_listing_mvp.utils.thumbnailutils.ThumbnailCreator;
 import com.example.android_video_listing_mvp.utils.thumbnailutils.BitmapCache;
 
 import java.util.ArrayList;
@@ -98,10 +98,8 @@ public class FolderListAdapter extends BaseExpandableListAdapter {
 
         //lastPartOfTitle=lastPartOfTitle + "      " + videoCount;
         if (convertView == null){
-            LayoutInflater layoutInflater= (LayoutInflater) mContext.
-                    getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView=layoutInflater.
-                    inflate(R.layout.tab_folderlist_parent, parent, false);
+            LayoutInflater layoutInflater= (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView=layoutInflater.inflate(R.layout.tab_folderlist_parent, parent, false);
         }
 
         TextView parent_txtView= (TextView) convertView.findViewById(R.id.parent_txt);
@@ -112,6 +110,7 @@ public class FolderListAdapter extends BaseExpandableListAdapter {
         folderVideoCount.setText(videoCount + "");
         String folderPath =  group_title.substring(0,lastIndexOf);
         folderPath_txtView.setText(folderPath);
+        folderPath_txtView.setBackgroundColor(mContext.getColor(R.color.colorAccent));
 
         return convertView;
     }
@@ -161,10 +160,10 @@ public class FolderListAdapter extends BaseExpandableListAdapter {
         if (found != null)
             viewHolder.thumbnail.setImageBitmap(found);
         else {
-            if (ThumbnailCreateor.cancelPotentialWork(videoid, viewHolder.thumbnail)) {
-                ThumbnailCreateor.BitmapWorkerTask task = new ThumbnailCreateor.BitmapWorkerTask(viewHolder.thumbnail, mContext.getContentResolver(), videoFullPath);
+            if (ThumbnailCreator.cancelPotentialWork(videoid, viewHolder.thumbnail)) {
+                ThumbnailCreator.BitmapWorkerTask task = new ThumbnailCreator.BitmapWorkerTask(viewHolder.thumbnail, mContext.getContentResolver(), videoFullPath);
 
-                ThumbnailCreateor.AsyncDrawable downloadedDrawable = new ThumbnailCreateor.AsyncDrawable(mContext.getResources(), bmp ,task);
+                ThumbnailCreator.AsyncDrawable downloadedDrawable = new ThumbnailCreator.AsyncDrawable(mContext.getResources(), bmp ,task);
                 viewHolder.thumbnail.setImageDrawable(downloadedDrawable);
                 task.execute(String.valueOf(videoid), videoFullPath);
 

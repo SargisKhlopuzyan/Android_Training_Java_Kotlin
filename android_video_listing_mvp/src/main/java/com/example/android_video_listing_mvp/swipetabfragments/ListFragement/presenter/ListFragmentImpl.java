@@ -103,6 +103,7 @@ public class ListFragmentImpl extends Fragment implements VideoListFragmentInter
 
     @Override
     public void bindVideoList(VideoListInfo videoListInfo) {
+        //
         mVideoListInfo = videoListInfo;
         mListFragmentViewImpl.bindVideoList(videoListInfo.getVideosList(), videoListInfo);
     }

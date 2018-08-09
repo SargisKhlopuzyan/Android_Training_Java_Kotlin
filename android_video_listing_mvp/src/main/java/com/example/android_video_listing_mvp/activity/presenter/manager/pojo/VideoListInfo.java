@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * Created by nitinagarwal on 3/7/17.
  */
-
 public class VideoListInfo {
 
     private ArrayList<String> mVideoList;

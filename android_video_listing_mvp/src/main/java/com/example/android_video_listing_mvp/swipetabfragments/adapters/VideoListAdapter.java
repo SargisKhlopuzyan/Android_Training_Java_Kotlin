@@ -12,7 +12,7 @@ import com.example.android_video_listing_mvp.R;
 import com.example.android_video_listing_mvp.activity.presenter.manager.pojo.VideoListInfo;
 import com.example.android_video_listing_mvp.utils.Converters;
 import com.example.android_video_listing_mvp.utils.thumbnailutils.CustomImageView;
-import com.example.android_video_listing_mvp.utils.thumbnailutils.ThumbnailCreateor;
+import com.example.android_video_listing_mvp.utils.thumbnailutils.ThumbnailCreator;
 import com.example.android_video_listing_mvp.utils.thumbnailutils.BitmapCache;
 
 import java.util.List;
@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
  */
 
 public class VideoListAdapter extends ArrayAdapter<String> {
-
 
     private Context mContext;
     private int mVideoListingLayout;
@@ -43,7 +42,6 @@ public class VideoListAdapter extends ArrayAdapter<String> {
             return videos.size();
         return 0;
     }
-
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -83,13 +81,12 @@ public class VideoListAdapter extends ArrayAdapter<String> {
         if (found != null)
             viewHolder.thumbnail.setImageBitmap(found);
         else {
-            if (ThumbnailCreateor.cancelPotentialWork(videoid, viewHolder.thumbnail)) {
-                ThumbnailCreateor.BitmapWorkerTask task = new ThumbnailCreateor.BitmapWorkerTask(viewHolder.thumbnail, mContext.getContentResolver(), videoFullPath);
+            if (ThumbnailCreator.cancelPotentialWork(videoid, viewHolder.thumbnail)) {
+                ThumbnailCreator.BitmapWorkerTask task = new ThumbnailCreator.BitmapWorkerTask(viewHolder.thumbnail, mContext.getContentResolver(), videoFullPath);
 
-                ThumbnailCreateor.AsyncDrawable downloadedDrawable = new ThumbnailCreateor.AsyncDrawable(mContext.getResources(), bmp ,task);
+                ThumbnailCreator.AsyncDrawable downloadedDrawable = new ThumbnailCreator.AsyncDrawable(mContext.getResources(), bmp ,task);
                 viewHolder.thumbnail.setImageDrawable(downloadedDrawable);
                 task.execute(String.valueOf(videoid),videoFullPath);
-
             }
         }
         return convertView;

@@ -13,6 +13,4 @@
     tools:context=".activity.presenter.VideoListingActivity"
     tools:showIn="@layout/app_bar_main">
 
-
-
 </RelativeLayout>

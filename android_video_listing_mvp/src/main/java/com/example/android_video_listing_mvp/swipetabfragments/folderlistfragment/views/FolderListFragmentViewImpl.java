@@ -18,7 +18,6 @@ import java.util.List;
 /**
  * Created by nitinagarwal on 3/15/17.
  */
-
 public class FolderListFragmentViewImpl implements FolderListFragmentView {
 
     View mFragmentFolderListView;
@@ -26,8 +25,7 @@ public class FolderListFragmentViewImpl implements FolderListFragmentView {
     FolderListAdapter mFolderListAdapter;
 
 
-    public FolderListFragmentViewImpl(Context context, ViewGroup container, LayoutInflater inflater)
-    {
+    public FolderListFragmentViewImpl(Context context, ViewGroup container, LayoutInflater inflater) {
         mFragmentFolderListView = inflater.inflate(R.layout.tab_folderlist, container, false);
         mExpandableListView = (ObservableExpandableListView) mFragmentFolderListView.findViewById(R.id.expandablelistview);
         mFolderListAdapter = new FolderListAdapter(context);
@@ -40,8 +38,7 @@ public class FolderListFragmentViewImpl implements FolderListFragmentView {
     }
 
     @Override
-    public void bindVideoList(HashMap<String, List<String>> folderListHashMap, ArrayList<String> folderNames, VideoListInfo videoListInfo)
-    {
+    public void bindVideoList(HashMap<String, List<String>> folderListHashMap, ArrayList<String> folderNames, VideoListInfo videoListInfo) {
         mFolderListAdapter.bindVideoList(folderListHashMap, folderNames, videoListInfo);
         mFolderListAdapter.notifyDataSetChanged();
     }

@@ -17,10 +17,7 @@ import java.lang.ref.WeakReference;
 /**
  * Created by nitinagarwal on 10/29/15.
  */
-public class ThumbnailCreateor {
-
-
-
+public class ThumbnailCreator {
 
     public static class BitmapWorkerTask extends AsyncTask<String,Void,Bitmap>
     {
