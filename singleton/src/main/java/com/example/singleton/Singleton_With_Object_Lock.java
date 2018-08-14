@@ -5,8 +5,7 @@ public class Singleton_With_Object_Lock {
     private static volatile Singleton_With_Object_Lock instance;
     private static Object lock = new Object();
 
-    private Singleton_With_Object_Lock() {
-    }
+    private Singleton_With_Object_Lock() {}
 
     public static Singleton_With_Object_Lock getInstance() {
         Singleton_With_Object_Lock result = instance;

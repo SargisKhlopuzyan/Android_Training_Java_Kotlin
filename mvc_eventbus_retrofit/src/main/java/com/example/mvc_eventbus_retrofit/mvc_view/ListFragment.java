@@ -113,4 +113,10 @@ public class ListFragment extends Fragment {
         itemPhotoListAdapter.notifyDataSetChanged();
     }
 
+
+    private void xxx(final int x) {
+
+        final int xxx = 10;
+    }
+
 }

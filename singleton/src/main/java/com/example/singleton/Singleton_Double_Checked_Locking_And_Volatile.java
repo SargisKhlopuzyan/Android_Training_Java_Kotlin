@@ -22,5 +22,4 @@ public class Singleton_Double_Checked_Locking_And_Volatile {
         }
         return localInstance;
     }
-
 }
