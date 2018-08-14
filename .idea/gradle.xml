@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/mvvm_people" />
             <option value="$PROJECT_DIR$/singleton" />
             <option value="$PROJECT_DIR$/synchronized_application" />
+            <option value="$PROJECT_DIR$/synchronized_collections" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
