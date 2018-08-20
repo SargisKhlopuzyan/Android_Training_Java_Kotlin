@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android_video_listing_mvp" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/crunchify" />
             <option value="$PROJECT_DIR$/dagger_2" />
             <option value="$PROJECT_DIR$/databinding" />
             <option value="$PROJECT_DIR$/databinding_in_recyclerview" />
@@ -22,6 +23,7 @@
             <option value="$PROJECT_DIR$/singleton" />
             <option value="$PROJECT_DIR$/synchronized_application" />
             <option value="$PROJECT_DIR$/synchronized_collections" />
+            <option value="$PROJECT_DIR$/unit_testing" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

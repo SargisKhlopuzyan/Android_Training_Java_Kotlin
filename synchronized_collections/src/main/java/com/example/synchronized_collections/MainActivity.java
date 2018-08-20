@@ -24,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        ConverterHelper.hashMapToArrayList();
 //        ConverterHelper.IterateThroughMapAndList();
+        String str = ConverterHelper.reverseRecursion("Sargis");
+        Log.e("LOG_TAG", "" + str);
     }
 }

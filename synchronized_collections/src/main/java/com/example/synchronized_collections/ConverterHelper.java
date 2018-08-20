@@ -102,7 +102,5 @@ public class ConverterHelper {
     private static void log(String string) {
         Log.e("LOG_TAG", string);
     }
-
-    // End - Iterate Through Map and List in Java
-
+    
 }
