@@ -10,14 +10,50 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="5dp"
         android:text="Start Async Method"
-        android:onClick="StartAsyncMethod" />
+        android:onClick="startAsyncMethod" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Async Block"
-        android:onClick="StartAsyncBlock" />
+        android:layout_marginBottom="5dp"
+        android:onClick="startAsyncBlock" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Lock"
+        android:onClick="lock" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="unlock"
+        android:onClick="unlock" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Start Wait"
+        android:onClick="startWait" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="geeks for geeks"
+        android:onClick="geeksForGeeks" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Start Produce Consume"
+        android:onClick="startProduceConsume" />
 
 </LinearLayout>
