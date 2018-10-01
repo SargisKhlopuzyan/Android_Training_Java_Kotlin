@@ -30,12 +30,10 @@ public class StringPrinter_With_ThreadPoolExecutor {
                 }
 
                 if (Thread.interrupted()) {
-                    Log.e("LOG_TAG", "Thread is interrupted" );
                     return;
                 }
 
                 String randomString = RandomClass.getRandomString(i);
-                Log.e("LOG_TAG", "String returned is : " + randomString);
 
             }
         };

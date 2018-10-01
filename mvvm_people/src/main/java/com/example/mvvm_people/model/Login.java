@@ -5,6 +5,6 @@ import java.io.Serializable;
 
 public class Login implements Serializable {
 
-    @SerializedName("username") public String userName;
+@SerializedName("username") public String userName;
 
-}
+        }

@@ -7,8 +7,7 @@ import javax.inject.Inject;
 
 public class ProductListener {
 
-    // We are creating a class member variable for the
-    // Shopping cart that we will be injecting to this class
+    // We are creating a class member variable for the shopping cart that we will be injecting to this class
 
     @Inject
     ShoppingCart mCart;
@@ -37,4 +36,5 @@ public class ProductListener {
     public void onDeleteItemButtonClicked(LineItem item) {
         mCart.removeItemFromCart(item);
     }
+
 }

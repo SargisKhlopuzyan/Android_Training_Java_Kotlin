@@ -77,6 +77,13 @@ android {
             implementation "com.squareup.retrofit2:converter-gson:$project.retrofit"
             implementation "com.squareup.retrofit2:adapter-rxjava2:$project.retrofit"
         }
+
+//        //This step below fixes the issues
+//        afterEvaluate {
+//            android.applicationVariants.all {
+//                def name = it.name.capitalize()
+//                tasks["kapt${name}Kotlin"].dependsOn("transformDataBindingWithDataBindingMergeArtifactsFor${name}")
+//            }
     }
 
 }

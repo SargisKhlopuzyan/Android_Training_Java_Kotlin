@@ -21,18 +21,19 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.PeopleAdap
         this.peopleList = Collections.emptyList();
     }
 
-    @Override public PeopleAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        ItemPeopleBinding itemPeopleBinding =
-                DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_people,
-                        parent, false);
+    @Override
+    public PeopleAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        ItemPeopleBinding itemPeopleBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_people, parent, false);
         return new PeopleAdapterViewHolder(itemPeopleBinding);
     }
 
-    @Override public void onBindViewHolder(PeopleAdapterViewHolder holder, int position) {
+    @Override
+    public void onBindViewHolder(PeopleAdapterViewHolder holder, int position) {
         holder.bindPeople(peopleList.get(position));
     }
 
-    @Override public int getItemCount() {
+    @Override
+    public int getItemCount() {
         return peopleList.size();
     }
 

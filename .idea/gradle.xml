@@ -10,6 +10,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android_video_listing_mvp" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/async_task" />
+            <option value="$PROJECT_DIR$/async_task_loader" />
             <option value="$PROJECT_DIR$/crunchify" />
             <option value="$PROJECT_DIR$/dagger_2" />
             <option value="$PROJECT_DIR$/databinding" />
@@ -23,6 +25,7 @@
             <option value="$PROJECT_DIR$/producerconsumer" />
             <option value="$PROJECT_DIR$/semaphore" />
             <option value="$PROJECT_DIR$/singleton" />
+            <option value="$PROJECT_DIR$/sms_sender" />
             <option value="$PROJECT_DIR$/synchronized_application" />
             <option value="$PROJECT_DIR$/synchronized_collections" />
             <option value="$PROJECT_DIR$/unit_testing" />

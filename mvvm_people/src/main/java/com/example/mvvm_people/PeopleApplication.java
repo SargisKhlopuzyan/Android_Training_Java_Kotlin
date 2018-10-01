@@ -6,7 +6,11 @@ import android.content.Context;
 import com.example.mvvm_people.data.PeopleFactory;
 import com.example.mvvm_people.data.PeopleService;
 
+import java.util.Observer;
+
+import io.reactivex.Observable;
 import io.reactivex.Scheduler;
+import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 public class PeopleApplication extends Application {
@@ -45,4 +49,5 @@ public class PeopleApplication extends Application {
     public void setScheduler(Scheduler scheduler) {
         this.scheduler = scheduler;
     }
+
 }

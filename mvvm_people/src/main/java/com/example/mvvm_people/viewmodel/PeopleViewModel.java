@@ -32,7 +32,6 @@ public class PeopleViewModel extends Observable {
     private CompositeDisposable compositeDisposable = new CompositeDisposable();
 
     public PeopleViewModel(@NonNull Context context) {
-
         this.context = context;
         this.peopleList = new ArrayList<>();
         peopleProgress = new ObservableInt(View.GONE);
@@ -52,6 +51,8 @@ public class PeopleViewModel extends Observable {
         peopleRecycler.set(View.GONE);
         peopleProgress.set(View.VISIBLE);
     }
+
+
 
     public void fetchPeopleList() {
 

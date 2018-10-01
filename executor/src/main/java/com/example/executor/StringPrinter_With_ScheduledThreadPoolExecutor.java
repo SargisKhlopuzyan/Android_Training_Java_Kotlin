@@ -38,11 +38,8 @@ public class StringPrinter_With_ScheduledThreadPoolExecutor {
                 if (count == 3) {
                     shutDownNowExecutor();
                 }
-                Log.e("LOG_TAG", "String returned is :" + randomString);
             }
         };
         return runnable;
     }
-
-
 }

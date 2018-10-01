@@ -18,10 +18,7 @@ public class RandomClass {
         }
         try {
             Thread.sleep(5000);
-        } catch (InterruptedException e) {
-        }
-
+        } catch (InterruptedException e) { }
         return stringBuilder.toString();
     }
-
 }

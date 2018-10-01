@@ -23,7 +23,8 @@ public class PeopleActivity extends AppCompatActivity implements Observer {
     private PeopleActivityBinding peopleActivityBinding;
     private PeopleViewModel peopleViewModel;
 
-    @Override protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         initDataBinding();
@@ -53,6 +54,7 @@ public class PeopleActivity extends AppCompatActivity implements Observer {
         peopleViewModel.reset();
     }
 
+    /**
     @Override public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
@@ -69,8 +71,10 @@ public class PeopleActivity extends AppCompatActivity implements Observer {
     private void startActivityActionView() {
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(PeopleFactory.PROJECT_URL)));
     }
+    */
 
-    @Override public void update(Observable observable, Object data) {
+    @Override
+    public void update(Observable observable, Object data) {
         if (observable instanceof PeopleViewModel) {
             PeopleAdapter peopleAdapter = (PeopleAdapter) peopleActivityBinding.listPeople.getAdapter();
             PeopleViewModel peopleViewModel = (PeopleViewModel) observable;

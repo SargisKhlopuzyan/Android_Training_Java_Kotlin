@@ -37,16 +37,20 @@ public class ItemPeopleViewModel extends BaseObservable {
         return people.picture.medium;
     }
 
-    @BindingAdapter("imageUrl") public static void setImageUrl(ImageView imageView, String url) {
-        Glide.with(imageView.getContext()).load(url).into(imageView);
-    }
-
     public void onItemClick(View view) {
         context.startActivity(PeopleDetailActivity.launchDetail(view.getContext(), people));
+    }
+
+
+
+    @BindingAdapter("imageUrl")
+    public static void setImageUrl(ImageView imageView, String url) {
+        Glide.with(imageView.getContext()).load(url).into(imageView);
     }
 
     public void setPeople(People people) {
         this.people = people;
         notifyChange();
     }
+
 }
